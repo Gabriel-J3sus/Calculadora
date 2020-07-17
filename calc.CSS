@@ -1,11 +1,36 @@
 button {
-    font-size: 200%;
-    width: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size:1.5em;
+    color: rgb(85, 85, 85);
+    width: 80px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.897);
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 3px;
+    box-shadow: 0 5px 6px 0 rgba(189, 189, 189, 0.897);
+
 }
-    
+
+#equalsButton {
+    font-size: 1.6em;
+    background-color: rgb(84, 187, 247);
+    color: white;
+}
+
+#addButton, #subtractButton, #multiplyButton, #divideButton {
+    background-color: rgb(230, 247, 255);
+}
+
+#clearButton {
+    background-color: rgb(220, 251, 252);
+    width: 415%;
+}
+
 input {
-    font-size: 14px;
+    font-size: 1em;
     height: 40px;
+    width: 100%;
     text-align: right;
 }
     
