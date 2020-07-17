@@ -1,6 +1,5 @@
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <link href="calc.CSS" rel="stylesheet">
     <title> Calculator </title>
   </head>
@@ -8,34 +7,37 @@
     <table>
       <tbody>
         <tr>
-          <td colspan="4"><input id="display" name="display" disabled=""></td>
+          <td colspan = "4"><input id = "display" name = "display" disabled = ""></td>
         </tr>
         <tr>
-          <td><button id="button1" value="1" onclick = "number(this)">1</button></td>
-          <td><button id="button2" value="2" onclick = "number(this)">2</button></td>
-          <td><button id="button3" value="3" onclick = "number(this)">3</button></td>
-          <td><button id="addButton" onclick = "add()">+</button></td>
+          <td><button id = "clearButton"> C </button></td>
         </tr>
         <tr>
-          <td><button id="button4" value="4" onclick = "number(this)">4</button></td>
-          <td><button id="button5" value="5" onclick = "number(this)">5</button></td>
-          <td><button id="button6" value="6" onclick = "number(this)">6</button></td>
-          <td><button id="subtractButton" onclick = "subtract()">-</button></td>
+          <td><button id = "button1" value = "1" onclick = "number(this)"> 1 </button></td>
+          <td><button id = "button2" value = "2" onclick = "number(this)"> 2 </button></td>
+          <td><button id = "button3" value = "3" onclick = "number(this)"> 3 </button></td>
+          <td><button id = "addButton" onclick = "add()"> + </button></td>
         </tr>
         <tr>
-          <td><button id="button7" value="7" onclick = "number(this)">7</button></td>
-          <td><button id="button8" value="8" onclick = "number(this)">8</button></td>
-          <td><button id="button9" value="9" onclick = "number(this)">9</button></td>
-          <td><button id="multiplyButton" onclick = "multiply()">*</button></td>
+          <td><button id = "button4" value = "4" onclick = "number(this)"> 4 </button></td>
+          <td><button id = "button5" value = "5" onclick = "number(this)"> 5 </button></td>
+          <td><button id = "button6" value = "6" onclick = "number(this)"> 6 </button></td>
+          <td><button id = "subtractButton" onclick = "subtract()"> - </button></td>
         </tr>
         <tr>
-          <td><button id="clearButton">C</button></td>
-          <td><button id="button0" value="0" onclick = "number(this)">0</button></td>
-          <td><button id="equalsButton" onclick = "equal()">=</button></td>
-          <td><button id="divideButton" onclick = "divide()">/</button></td>
+          <td><button id = "button7" value = "7" onclick = "number(this)"> 7 </button></td>
+          <td><button id = "button8" value = "8" onclick = "number(this)"> 8 </button></td>
+          <td><button id = "button9" value = "9" onclick = "number(this)"> 9 </button></td>
+          <td><button id = "multiplyButton" onclick = "multiply()"> * </button></td>
+        </tr>
+        <tr>
+          <td><button id = "button0" value = "0" onclick = "number(this)"> 0 </button></td>
+          <td><button id = "buttondot" value = "." onclick = "number(this)"> . </button></td>
+          <td><button id = "equalsButton" onclick = "equal()">=</button></td>
+          <td><button id = "divideButton" onclick = "divide()">/</button></td>
         </tr>
       </tbody>
     </table>
-    <script src="calc.js"></script>
+    <script src = "calc.js"></script>
   </body>
 </html>

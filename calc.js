@@ -3,7 +3,6 @@ result, display = document.getElementById("display"),
 clear = document.getElementById("clearButton").addEventListener("click", clear);
 
 function number(num) {
-    console.log("inside the function");
     //calcNumbers["firstNum"]
     if (calcNumbers["operator"] == "") {
         display.value += num.value;
@@ -22,28 +21,28 @@ function number(num) {
 function add() {
     calcNumbers["operator"] = "+"; 
     console.log("add function");
-    display.value = "";
+    display.value += " + ";
 }
 
 //subtract operator
 function subtract() {
     calcNumbers["operator"] = "-";
     console.log("subtract function"); 
-    display.value = ""; 
+    display.value += " - "; 
 }
 
 //multiply operator
 function multiply() {
     calcNumbers["operator"] = "*"; 
     console.log("multiply function"); 
-    display.value = "";
+    display.value += " * ";
 }
 
 //divide operator
 function divide() {
     calcNumbers["operator"] = "/";  
     console.log("divide function");
-    display.value = "";
+    display.value += " / ";
 }
 
 //cleaning
@@ -59,33 +58,34 @@ function clear() {
 function equal() {
     console.log("equal function");
     //adding
+    display.value += " = ";
     if (calcNumbers["operator"] == "+") {
         console.log("Adding");
-        result = parseInt(calcNumbers["firstNum"]) + parseInt(calcNumbers["secondNum"]);
+        result = parseFloat(calcNumbers["firstNum"]) + parseFloat(calcNumbers["secondNum"]);
         console.log("Result: " + result);
-        display.value = result.toString();
-        calcNumbers["firstNum"] = display.value;
+        display.value += result.toString();
+        calcNumbers["firstNum"] = result.toString();
     }//subtracting
     else if (calcNumbers["operator"] == "-") {
         console.log("Subtracting");
-        result = parseInt(calcNumbers["firstNum"]) - parseInt(calcNumbers["secondNum"]);
+        result = parseFloat(calcNumbers["firstNum"]) - parseFloat(calcNumbers["secondNum"]);
         console.log("Result: " + result);
-        display.value = result.toString();
-        calcNumbers["firstNum"] = display.value;
+        display.value += result.toString();
+        calcNumbers["firstNum"] = result.toString();
     }//multiplying
     else if (calcNumbers["operator"] == "*") {
         console.log("Multiplicating");
-        result = parseInt(calcNumbers["firstNum"]) * parseInt(calcNumbers["secondNum"]);
+        result = parseFloat(calcNumbers["firstNum"]) * parseFloat(calcNumbers["secondNum"]);
         console.log("Result: " + result);
-        display.value = result.toString();
-        calcNumbers["firstNum"] = display.value;
+        display.value += result.toString();
+        calcNumbers["firstNum"] = result.toString();
     }//dividing
     else if (calcNumbers["operator"] == "/") {
         console.log("Dividing");
-        result = parseInt(calcNumbers["firstNum"]) / parseInt(calcNumbers["secondNum"]);
+        result = parseFloat(calcNumbers["firstNum"]) / parseFloat(calcNumbers["secondNum"]);
         console.log("Result: " + result);
-        display.value = result.toString();
-        calcNumbers["firstNum"] = display.value;
+        display.value += result.toString();
+        calcNumbers["firstNum"] = result.toString();
     }
 
     calcNumbers["secondNum"] = "";
